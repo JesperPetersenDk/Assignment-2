@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JetMove : MonoBehaviour
+public class Counter : MonoBehaviour
 {
+    public int count;
+
     // Start is called before the first frame update
     void Start()
     {

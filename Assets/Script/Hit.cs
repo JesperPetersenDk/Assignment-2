@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shoot : MonoBehaviour
+public class Hit : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
