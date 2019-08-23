@@ -17,9 +17,5 @@ public class Hit : MonoBehaviour
             print("Picked up");
             //Destroy(gameObject);
         }
-        else
-        {
-            print("error");
-        }
     }
 }
