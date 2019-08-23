@@ -10,7 +10,7 @@ public class Hit : MonoBehaviour
     //    print("exit");
     //}
 
-    public void OnTriggerEnter(Collider item)
+    void OnTriggerEnter(Collider item)
     {
         if(item.gameObject.tag == "Player")
         {
