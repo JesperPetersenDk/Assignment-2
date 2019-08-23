@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class Hit : MonoBehaviour
 {
+    public AudioSource collectSound;
 
-    //public void OnTriggerExit(Collider other)
-    //{
-    //    print("exit");
-    //}
 
-    void OnTriggerEnter(Collider item)
+    void OnTriggerEnter(Collider other)
     {
-        if(item.gameObject.tag == "Player")
-        {
-            print("Picked up");
-            //Destroy(gameObject);
-        }
+        collectSound.Play();
+        Counter.count += 1;
+        Destroy(gameObject);
     }
 }
