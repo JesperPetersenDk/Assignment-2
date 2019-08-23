@@ -5,12 +5,14 @@ using UnityEngine;
 public class Respawn : MonoBehaviour
 {
 
-    public void OnClickF()
+    public GameObject car;
+
+    public void OnClickNow()
     {
-        var check = Input.GetKeyDown(KeyCode.F);
-        if (check)
-        {
-            print("hello world");
-        }
+        print("hello world");
+
+        Instantiate(car,
+             new Vector3(0, 0, 0),
+             Quaternion.identity);
     }
 }
