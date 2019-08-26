@@ -9,8 +9,11 @@ public class Hit : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        collectSound.Play();
-        Counter.count += 1;
-        Destroy(gameObject);
+        //if (other.gameObject.CompareTag("Cube"))
+        //{
+            collectSound.Play();
+            Counter.count += 1;
+            Destroy(this);
+        //}
     }
 }
